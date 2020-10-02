@@ -1,7 +1,7 @@
 .container {
 	display: grid;
 	grid-template-columns: 300px auto 500px;
-	grid-template-rows: 100px 500px 50px 300px 100px;	
+	grid-template-rows: 100px 370px 100px;	
 }
 
 header {
@@ -26,16 +26,27 @@ nav {
 	padding-left: 20px;
 }
 
+main {
+  display: block;
+  grid-column-start: 2;
+  grid-column-end: 7;
+  grid-row-start: 2;
+  grid-row-end: 7;
+
+}
 
 
-footer {
+
+footer, h3 {
 	display: block;
 	grid-column-start: 1;
 	grid-column-end: 7;
 	grid-row-start: 5;
 	grid-row-end: 5;
 	background-color: #383838;
-	text-align: left;
+	text-align: center;
+  color: white;
+  
 }
 
 .copyright{
@@ -43,33 +54,27 @@ footer {
 
 }
 
-.paragraph{
-	padding-left; 200px;
-	padding-right: 100px;
-}
-
-.pic {
+.image {
 	padding-left: 200px;
+  width: 50%;
+  height: 50%;
 }
 
-p{
-text-align: center;
-margin-bottom: 200px;
-}
+
 
 h2 {
 	padding-left: 470px;
 }
 
 img {
-	width: 500px;
-	height: 400px;
+	width: 400px;
+	height: 300px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .teknikum {
-	grid-column-start: 6;
-	grid-row-start: 2;
-	padding-top: 50px;
+  padding-left: 115px;
 }
 
 body {
@@ -88,12 +93,12 @@ h4 {
 }
 
 .table {
-	padding-left: 100px;
-	padding-top: 100px;
+	padding-left: 10px;
+	padding-top: 10px;
 }
 
 table {
-	width: 200%;
+	width: 100%;
 }
 
 table, th, td {
@@ -101,6 +106,7 @@ table, th, td {
 	border-collapse: collapse;
 	height: 30px;
 }
+
 
 td, th {
 	height: 90px;
@@ -126,3 +132,14 @@ tr:nth-child(odd) {
 	background-color: #F0E68C;
 }
 
+td:nth-child(1) {
+  background-color: #98FB98;
+}
+
+th:nth-child(1) {
+  background-color: orange;
+}
+
+p:first-of-type::first-letter {
+  font-size: 25px;
+}

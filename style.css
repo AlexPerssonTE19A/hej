@@ -1,10 +1,10 @@
-.container {
+.container { /*Grid layout*/
 	display: grid;
 	grid-template-columns: 300px auto 500px;
 	grid-template-rows: 100px 370px 100px;	
 }
 
-header {
+header { /*Designen och layouten för headern. Det översta.*/
 	display: block;
 	grid-column-start: 1;
 	grid-column-end: 7;
@@ -13,7 +13,7 @@ header {
 	background-color: gray;
 
 }
-nav {
+nav { /*Designen och layouten för sidhuvudet*/
 	display: block;
 	grid-column-start: 1;
 	grid-column-end: 1;
@@ -26,7 +26,7 @@ nav {
 	padding-left: 20px;
 }
 
-main {
+main { /*Designen och layouten som visar innehållet*/
   display: block;
   grid-column-start: 2;
   grid-column-end: 7;
@@ -37,7 +37,7 @@ main {
 
 
 
-footer, h3 {
+footer, h3 { /*Design och layouten för footern. Det längst ner.*/
 	display: block;
 	grid-column-start: 1;
 	grid-column-end: 7;
@@ -49,12 +49,12 @@ footer, h3 {
   
 }
 
-.copyright{
+.copyright{ /*Texten på footern*/
 	text-align: center;
 
 }
 
-.image {
+.image { /*Äpplet på index.html*/
 	padding-left: 200px;
   width: 50%;
   height: 50%;
@@ -62,84 +62,82 @@ footer, h3 {
 
 
 
-h2 {
+h2 { /*h2 modifieringar*/
 	padding-left: 470px;
 }
 
-img {
+img { /*Inställningar för bilder*/
 	width: 400px;
 	height: 300px;
   margin-left: auto;
   margin-right: auto;
 }
 
-.teknikum {
+.teknikum { /*Inställningar för bilden på teknikum*/
   padding-left: 115px;
-}
+} 
 
-body {
+body { /*Backgrundsfärg*/
 	background-color: #D3D3D3;
 }
 
-h1 {
+h1 { /*Inställningar för h1 element.*/
 	text-align: center;
 	font-size: 35px
 }
 
-h4 {
+h4 { /*Inställningar för h4 element.*/
 	float: left;
 	font-size: 25px;
 	padding-left: 25px;
 }
 
-.table {
-	padding-left: 10px;
-	padding-top: 10px;
-}
 
-table {
+table { /* Tabellen med trigonometriska förhållanden.*/
 	width: 100%;
+  padding-left:10px;
+  padding-top: 10px;
 }
 
-table, th, td {
+table, th, td { /*Tabellen, rubrikerna och inehållets inställningar som dom delar tillsammans*/
 	border: 1px solid black;
 	border-collapse: collapse;
 	height: 30px;
 }
 
 
-td, th {
+td, th { /*Innehållet inuti tabellen*/
 	height: 90px;
 	text-align: center;
 }
 
-caption{
+caption{ /*Tabellens rubrik*/
 	caption-side: bottom;
 	font-size: 20px;
 }
 
-th {
+th { /*rubrikernas bakgrundsfärg i tabellen*/
 	background-color: #98FB98;
 	
 }
 
 
-tr:nth-child(even) {
+tr:nth-child(even) {/*Zebra striping. För alla n => n % 2 = 0*/
 	background-color: #DC143C;
 }
 
-tr:nth-child(odd) {
+tr:nth-child(odd) {/*Zebra striping. för alla n => n % 2 != 0*/
 	background-color: #F0E68C;
 }
 
-td:nth-child(1) {
+td:nth-child(1) { /*Det första elementet i column 1 och för alla rader > 1*/
   background-color: #98FB98;
 }
 
-th:nth-child(1) {
+th:nth-child(1) { /*den första raden och den första columnen*/
   background-color: orange;
 }
 
-p:first-of-type::first-letter {
+p:first-of-type::first-letter { /*För varje ny start på en <p> börjar med storlek = font-size: 25px;*/
   font-size: 25px;
 }
